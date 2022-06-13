@@ -3,12 +3,12 @@ import {Text, View, StyleSheet} from "react-native"
 
 function ComponentsScreen() {
               
-    const subHeader = <Text style={styles.subHeader}>My name is WHAT</Text>
+    const name = "WHAT"
 
     return (
         <View>
               <Text style={styles.textStyle}>Getting started with React Native!</Text>
-              {subHeader}
+              <Text style={styles.subHeader}>My name is {name}</Text>
         </View>
   )
 }
