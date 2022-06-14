@@ -14,7 +14,10 @@ function ListScreen() {
   return (
     <FlatList showsHorizontalScrollIndicator={false} 
       keyExtractor={(friend)=> friend.name} data={friends} 
-      renderItem={({item})=> (<Text style={styles.text}>{item.name} - Age {item.age}</Text>)
+      renderItem={({item})=> 
+        (<Text style={styles.text}>
+          {item.name} - Age {item.age}
+         </Text>)
     }/>
   )
 }
