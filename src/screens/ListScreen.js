@@ -12,7 +12,7 @@ function ListScreen() {
     {name: "friend seven"},
   ]
   return (
-    <FlatList data={friends} renderItem={({item})=> {
+    <FlatList keyExtractor={(friend)=> friend.name} data={friends} renderItem={({item})=> {
       return <Text>{item.name}</Text>
     }}/>
   )
